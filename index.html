@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,104 @@
     <title>Portifólio</title>
     <link rel="icon" type="imagem/png" href="../img/icon.png" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
-<body>
-    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vel nostrum ea praesentium soluta expedita vero quisquam doloribus incidunt quis atque accusamus molestias architecto unde dicta, possimus explicabo perspiciatis numquam!</div>
+
+<body class="row m-0 p-0">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="row menu">
+                <button class="navbar-toggler text-white ms-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav-item d-flex justify-content-center">
+                        <a class="nav-link fw-bolder text-white active p-0" aria-current="page" href="index.html"><img
+                                src="/img/icon.png" id="icon-nav" /></a>
+                    </div>
+                    <ul class="navbar-nav me-auto mt-1 mb-lg-0 ">
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link fw-bolder text-white active" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link fw-bolder text-white active" href="#portifolio">Portifolio</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link fw-bolder text-white active" href="#contatos">Contatos</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="row m-0 p-0">
+
+        <section class="row d-flex align-content-center" id="inicio">
+            <div class="col-12 justify-content-center align-content-center text-center mb-5">
+                <h1>WILLIAM DE MATA DA SILVA</h1>
+                <h2 id="subTitulo"></h2>
+
+            </div>
+        </section>
+
+
+        <section class="row d-flex justify-content-center" id="sobre">
+            <div class="col-3 col-sm-2 col-md-4 col-lg-2 justify-content-center mt-5 pt-5" id="imgPerfil"><img src="../img/eu.jpg" class="img-fluid rounded- my-auto"  /></div>
+            <div class="col-7 col-sm-10 col-md-8 col-lg-8 align-content-center mt-5 pt-5 text-break">
+                <p>
+                    Sempre me identifiquei com a tecnologia, comecei a gostar deste mundo desde
+                    muito cedo, quando ainda ficava em lan houses e fliperamas, já deslumbrado com
+                    tudo o que se passava por trás daquelas máquinas. Com isso, fui ficando cada vez
+                    mais apaixonado e curioso sobre a tecnologia e consequentemente, buscando
+                    aprender mais sobre ela e os processos que a cercam. Comecei fazendo um curso
+                    de office básico e Windows XP, depois ganhei um computador, já usado e que vivia
+                    dando problema, mas que para mim, naquele momento, era incrível! Tinha um
+                    vizinho que sempre consertava para mim e eu, apaixonado pelo funcionamento de
+                    tudo aquilo, ficava em cima para aprender, até que fiz um curso de montagem e
+                    manutenção de redes estruturadas para que eu mesmo pudesse consertar e gerar
+                    renda consertando o de outras pessoas, no período em que servi o Exército
+                    Brasileiro realizava a manutenção dos computadores quando requisitado, desde
+                    então continuei a me desenvolver. Cursei a faculdade de Análise e Desenvolvimento
+                    de Sistemas e, durante a graduação, continuei fazendo outros cursos, alguns deles
+                    são o pacote office avançado, HTML, CSS, Java Script, PHP, Java, C#, MYSQL,
+                    SQLServer, Git e GitHub. Sou recém formado no curso de desenvolvimento Full Stack
+                    da Recode Pro, que visa capacitar jovens para atuar como desenvolvedores, dentre
+                    as tecnologias abordas neste curso estão HTML, CSS, Java Script, BootStrap, React JS,
+                    React Native, Java, Spring Boot, Maven, C#, ASPNET, JSON, XML, Git e GitHub, 
+                    SQLServer, MySql, MongoDB e em sua metodologia de ensino somos desafiados a criar 
+                    um projeto pessoal e um em squad que deve ser melhorado a cada modulo do curso, 
+                    com objetivo de colocar em pratica as tecnologias ensinadas, o trabalho em grupo e as Soft Skills.
+
+                </p>
+            </div>
+        </section>
+
+        <section class="row d-flex " id="portifolio">
+            <div class="col-12 justify-content-center align-content-center text-center mt-5 pt-5">
+                <h1>Portifolio</h1>
+            </div>
+        </section>
+
+        <section class="row d-flex " id="contatos">
+            <div class="col-12 justify-content-center align-content-center text-center mt-5 pt-5">
+                <h1>Contatos</h1>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

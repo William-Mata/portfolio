@@ -1,8 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: monospace;
 }
 
-body{
+html {
+    font-size: 1.1rem;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+body {
     background-image: url('../img/background.png');
+    background-attachment: fixed;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+
+
+.menu a {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-flex;
+    transition: background .2s;
+}
+
+.menu a:hover {
+    text-decoration: wavy;
+    border-radius: 5px;
+    background-color: rgb(255, 98, 0);
+}
+
+#icon-nav {
+    width: 50px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+main {
+    display: block;
+}
+
+#inicio h2::after{
+    content: '|';
+    opacity: 1;
+    animation: cursor .7s infinite;
+}
+
+@keyframes cursor {
+ 0%, 100%{
+     opacity: 1;
+ }   
+
+ 50% {
+     opacity: 0;
+ }
+}
+
+#imgPerfil img{
+    border-radius: 100px;
 }
