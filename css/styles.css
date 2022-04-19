@@ -4,29 +4,9 @@
     box-sizing: border-box;
     color: white;
     font-family: monospace;
+    font-size: 1rem;
 }
 
-html {
-    font-size: 1.1rem;
-}
-
-@include media-breakpoint-up(sm) {
-    html {
-        font-size: 1.2rem;
-    }
-}
-
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 1.4rem;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 1.6rem;
-    }
-}
 
 body {
     background-image: url('../img/background.png');
@@ -35,7 +15,7 @@ body {
 
 
 header {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
@@ -84,10 +64,13 @@ main {
 }
 
 #inicio img{
-    max-width: 130px;
-    animation: cursor .9s infinite;
+    animation: cursor 9.1s backwards 10  ;
 }
 
 #imgPerfil img{
     border-radius: 100px;
+}
+
+#contatos{
+    min-height: 30VH;
 }
