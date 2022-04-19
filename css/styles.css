@@ -51,7 +51,7 @@ header {
 .menu a:hover {
     text-decoration: wavy;
     border-radius: 5px;
-    background-color: rgb(255, 98, 0);
+    background-image: linear-gradient(rgb(255, 0, 50), rgb(0, 0, 255));
 }
 
 #icon-nav {
@@ -69,7 +69,8 @@ main {
 #inicio h2::after{
     content: '|';
     opacity: 1;
-    animation: cursor .7s infinite;
+    animation: cursor .7s infinite ;
+   
 }
 
 @keyframes cursor {
@@ -80,6 +81,11 @@ main {
  50% {
      opacity: 0;
  }
+}
+
+#inicio img{
+    max-width: 130px;
+    animation: cursor .9s infinite;
 }
 
 #imgPerfil img{
