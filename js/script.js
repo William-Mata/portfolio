@@ -59,4 +59,4 @@ function start(conteudos) {
 setTimeout(() => {
     document.getElementById('text').style.display = "inline-block";
     start(texts);
-}, 1200)
+}, 10000)
