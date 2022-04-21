@@ -34,14 +34,12 @@ header {
     background-image: linear-gradient(rgb(255, 0, 50), rgb(0, 0, 255));
 }
 
-.bg-black button{
-    border: 2px;
-    border-style: solid;
+.btn-black {
     transition: background .2s;
 }
 
 
-.bg-black button:hover{
+.btn-black:hover{
     background-color: black;
 }
 
