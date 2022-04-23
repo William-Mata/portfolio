@@ -13,7 +13,10 @@ window.onload = () => {
         }, 50 * w)
     })
 
-
+    setTimeout(() => {
+        document.getElementById('text').style.display = "inline-block";
+        start(texts);
+    }, 10000)
 
 }
 
@@ -56,7 +59,3 @@ function start(conteudos) {
     
 }
 
-setTimeout(() => {
-    document.getElementById('text').style.display = "inline-block";
-    start(texts);
-}, 10000)
